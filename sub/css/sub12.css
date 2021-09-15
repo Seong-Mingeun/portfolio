@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*main*/
+main {
+    width: 100%;
+    height: 500px;
+    background: url(../img/sub11/main_bg.png) no-repeat bottom/cover;
+    position: relative;
+    margin-top: 100px;
+    /*고정된 header의 높잇값만큼*/
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    padding-top: 20px;
+}
+
+main .lnb .location {
+    width: 240px;
+    text-align: center;
+}
+
+main .lnb .location > li {
+    float: left;
+    width: 90px;
+    position: relative;
+    margin-left: -10px;
+}
+main .lnb .location > li:last-child {
+    padding-left: 7px;
+}
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 7px;
+    left: 2px;
+}
+
+main .lnb .location > li > a {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+
+
+main .lnb .location .home {
+    width: 60px;
+}
+
+main .lnb .location .home a {
+    display: inline-block;
+}
+
+main .lnb .location .home a img {
+    width: 18px;
+    display: block;
+}
+
+main .main_title {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 20px;
+}

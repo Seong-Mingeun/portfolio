@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/*main*/
+main {
+    width: 100%;
+    height: 500px;
+    background: url(../img/sub11/main_bg.png) no-repeat bottom/cover;
+    position: relative;
+    margin-top: 100px;
+    /*고정된 header의 높잇값만큼*/
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    padding-top: 20px;
+}
+
+main .lnb .location {
+    width: 240px;
+    text-align: center;
+}
+
+main .lnb .location > li {
+    float: left;
+    width: 90px;
+    position: relative;
+    margin-left: -10px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+main .lnb .location > li > a {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+
+
+main .lnb .location .home {
+    width: 60px;
+}
+
+main .lnb .location .home a {
+    display: inline-block;
+}
+
+main .lnb .location .home a img {
+    width: 18px;
+    display: block;
+}
+
+main .main_title {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+/*section*/
+.convenient {
+    width: 1280px;
+    margin: 120px auto;
+}
+.convenient li {
+    border: 1px solid #ccc;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 22%;
+    height: 375px;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.convenient li>img {
+    width: 100%;
+    height: 240px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: block;
+}
+.convenient li>p {
+    padding: 12px 16px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+.convenient li .con_info {
+    padding-left: 12px;
+}
+.convenient li .con_info img {
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    /*margin-right: 4px;*/
+}
+.convenient li .con_info p {
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+.convenient li .con_info .fare {
+    padding-left: 24px;
+    margin-top: 6px;
+    font-weight: 600;
+    box-sizing: border-box;
+}

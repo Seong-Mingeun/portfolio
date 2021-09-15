@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    height: 500px;
+    background: url(../img/sub4/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    padding-top: 20px;
+}
+
+main .lnb .location {
+    width: 240px;
+    text-align: center;
+}
+
+main .lnb .location > li {
+    float: left;
+    width: 90px;
+    position: relative;
+    margin-left: -10px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+main .lnb .location > li > a {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+
+main .lnb .location .home {
+    width: 60px;
+}
+
+main .lnb .location .home a {
+    display: inline-block;
+}
+
+main .lnb .location .home a img {
+    width: 18px;
+    display: block;
+}
+
+main .main_title {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+
+/*section*/
+section {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.info {
+    margin: 120px auto 0;
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+}
+
+.info h2 > img {
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    left: 39%;
+    top: 5px;
+}
+
+.info h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info .info_wrap ul {
+    width: 100%;
+    margin-top: 100px;
+    padding: 14px 20px;
+    border: 1px solid #333;
+    border-top: 3px solid #e16254;
+}
+
+.info .info_wrap ul li {
+    margin-bottom: 24px;
+}
+
+.info .info_wrap ul li .num {
+    padding: 4px 12px;
+    border-radius: 100px;
+    background-color: #e16254;
+    color: #fff;
+}
+
+.info .info_wrap ul li p {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.ticketBtn {
+    text-align: center;
+    margin: 80px auto 40px;
+}
+
+.ticketBtn a {
+    display: inline-block;
+    border: 1px solid #e16254;
+    border-radius: 50px;
+    padding: 12px 40px;
+}
+
+.ticketBtn a:hover {
+    background-color: #e16254;
+    color: #fff;
+}
+
+/*.info .info_wrap li:nth-child(2) {
+    width: 22%;
+}*/
+
+.fee {
+    margin: 120px 0 80px;
+}
+
+.fee h2 {
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+}
+
+.fee h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fee .fee_table {
+    border: 1px solid #333;
+    border-top: 3px solid #e16254;
+    width: 100%;
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+
+.fee .fee_table thead {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(225, 98, 84, 0.4);
+}
+
+.fee .fee_table thead .row {
+    width: 16%;
+}
+
+.fee .fee_table thead th {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 8px 0;
+    border: 1px solid #333;
+
+}
+
+.fee .fee_table thead th ~ th {
+    width: 24%;
+}
+
+.fee .fee_table thead th span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: -0.8px;
+    color: #e16254;
+}
+
+.fee .fee_table tbody th {
+    width: 10%;
+    height: 80px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.fee .fee_table tbody th span {
+    display: block;
+    line-height: 1.8;
+    letter-spacing: -0.8px;
+    font-size: 12px;
+    color: #e16254;
+}
+
+.fee .fee_table tbody th,
+.fee .fee_table tbody td {
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.fee .fee_table tbody tr:last-child td {
+    text-align: left;
+    padding: 18px 14px;
+    line-height: 1.8;
+}
+
+.experience {
+    margin: 120px auto 80px;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+}
+
+.experience h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experience .experience_table {
+    border: 1px solid #333;
+    border-top: 3px solid #e16254;
+    width: 100%;
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+
+.experience_table thead {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(225, 98, 84, 0.4);
+}
+
+.experience_table thead .row {
+    width: 20%;
+}
+
+.experience_table thead th {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 8px 0;
+    border: 1px solid #333;
+
+}
+
+.experience_table thead th ~ th {
+    width: 25%;
+}
+
+.experience_table tbody th {
+    width: 10%;
+    height: 100px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.experience_table tbody th,
+.experience_table tbody td {
+    border: 1px solid #333;
+    text-align: center;
+    padding: 28px 0;
+}
+
+.experience_table tbody tr:last-child td {
+    text-align: left;
+    padding: 18px 14px;
+    line-height: 1.8;
+}

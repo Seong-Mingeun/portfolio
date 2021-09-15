@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/*main*/
+main {
+    width: 100%;
+    height: 500px;
+    background: url(../img/sub3/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 100px;
+    /*고정된 header의 높잇값만큼*/
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    padding-top: 20px;
+}
+
+main .lnb .location {
+    width: 240px;
+    text-align: center;
+}
+
+main .lnb .location > li {
+    float: left;
+    width: 90px;
+    position: relative;
+    margin-left: -10px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+main .lnb .location > li > a {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+main .lnb .location > li:last-child:before {
+	margin-left: -8px;
+}
+
+main .lnb .location .home {
+    width: 60px;
+}
+
+main .lnb .location .home a {
+    display: inline-block;
+}
+
+main .lnb .location .home a img {
+    width: 18px;
+    display: block;
+}
+
+main .main_title {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+
+/*res_title*/
+.res_title {
+    /*width: 80%;*/
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.res_title ul {
+    width: 1280px;
+    margin: 0 auto;
+    line-height: 60px;
+    position: relative;
+}
+
+.res_title ul:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: #999;
+    position: absolute;
+    top: 10px;
+}
+
+.res_title ul:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: #999;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.res_title li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.res_title li:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: #999;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.res_title li:last-child:after {
+    display: none;
+}
+
+.res_title li.active a {
+    color: #e16254;
+}
+
+.res_title li a {
+    font-size: 20px;
+}
+
+/*section*/
+section {
+    width: 100%;
+    /*margin: 0 auto;*/
+	padding: 60px 0;
+	box-sizing: border-box;
+}
+
+.restaurant {
+    width: 80%;
+	max-width: 1280px;
+    margin: 60px auto 120px;
+	color: #333;
+}
+
+.restaurant .title {
+    font-size: 26px;
+    margin-bottom: 60px;
+}
+
+.restaurant .title span {
+    color: #999;
+    font-weight: 100;
+    margin-left: 20px;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.restaurant_wrap .restaurant_box {
+    width: 400px;
+    height: 360px;
+    margin-bottom: 120px;
+    margin-right: 40px;
+    position: relative;
+	border: 3px solid #e16254;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+    float: left;
+    /*outline: 1px solid red;*/
+}
+
+.restaurant_wrap .restaurant_box:nth-child(4n) {
+    margin-right: 0;
+}
+
+.restaurant_wrap .restaurant_box .largeimg {   
+    height: 200px;
+    display: inline-block;
+    border-top-left-radius: 30px;
+    cursor: pointer;
+    /*outline: 1px solid blue;*/
+}
+
+.restaurant_wrap .restaurant_box .thumbs {
+    position: absolute;
+    top: 0;
+    left: 67%;
+}
+.restaurant_wrap .restaurant_box .thumbs img {
+    height: 100px;
+	border: 2px solid #e16254;
+	box-sizing: border-box;
+    display: block;
+}
+
+.restaurant_wrap .restaurant_box .restaurant_des {
+    width: 90%;
+    margin: 0 auto;
+   /* position: absolute;
+    top: 2%;
+    right: 6%;*/
+    /*display: none;*/
+}
+
+.restaurant_des h2 {
+    margin: 22px 0 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    width: 30%;
+}
+.restaurant_des>p {
+    margin-top: 30px;
+    font-size: 14px;
+}
+.restaurant_des .menu {
+    width: 70%;
+	margin-top: 25px;
+    position: absolute;
+    top: 54%;
+    left: 34%;
+}
+.restaurant_des .menu img {
+	width: 30px;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: #e16254;
+	padding: 8px;
+    float: left;
+}
+.restaurant_des .menu p {
+    text-indent: 12px;
+    line-height: 1.6;
+}
+.restaurant_des .menu p span {
+	display: block;
+    font-size: 14px;
+}

@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    z-index: 9999;
+}
+
+
+header .header_inner {
+    width: 100%;
+    max-width: 1520px;
+    height: 100%;
+    margin: 0 auto;
+    /*	outline: 2px solid #f00;*/
+}
+
+header .header_inner h1 {
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+header .header_inner h1 #logo img {
+    height: 70px;
+    margin-top: 15px;
+}
+
+/*navigation*/
+nav {
+    width: 75%;
+    height: 100%;
+    line-height: 100px;
+    float: left;
+}
+
+nav .gnb {
+    width: 100%;
+    margin-left: 20px;
+}
+
+nav .gnb li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    /*outline: 1px solid #333;*/
+}
+
+nav .gnb li a {
+    font-size: 22px;
+    color: #333;
+}
+
+nav .gnb li a:hover {
+    color: #e16254;
+}
+
+/*서브메뉴*/
+.sub {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 101px;
+    display: none;
+}
+
+.sub .sub_inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    height: 260px;
+    padding: 10px 0;
+    position: relative;
+    background: url(../../img/char_logo.png) no-repeat left;
+}
+
+.sub .sub_inner .sub_wrap {
+    width: 75%;
+    position: absolute;
+    left: 14.42448979591837%;
+}
+
+.sub .sub_inner .sub_wrap .submenu {
+    width: 20%;
+    float: left;
+}
+
+.sub .sub_inner .sub_wrap .submenu li {
+    padding: 14px 0;
+    text-align: center;
+}
+
+.sub .sub_inner .sub_wrap .submenu li a {
+    /*font-size: 20px;*/
+    font-size: 18px;
+    font-weight: 100;
+    color: #555;
+}
+
+.sub .sub_inner .sub_wrap .submenu li a:hover {
+    color: #e16254;
+    text-decoration: underline;
+}
+
+/*utility*/
+.utility {
+    height: 100px;
+    line-height: 100px;
+    float: right;
+}
+
+.utility li {
+    display: inline-block;
+}
+
+.utility li:first-child {
+    margin-right: 20px;
+    position: relative;
+}
+
+.utility li:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    position: absolute;
+    top: 44px;
+    right: -14px;
+}
+
+.utility li a {
+    color: #333;
+    font-size: 14px;
+}
+
+.utility li a:hover {
+    text-decoration: underline;
+    color: #e16254;
+}

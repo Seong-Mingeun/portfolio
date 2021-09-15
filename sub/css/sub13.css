@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    height: 500px;
+    background: url(../img/sub13/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    padding-top: 20px;
+}
+
+main .lnb .location {
+    width: 240px;
+    text-align: center;
+}
+
+main .lnb .location > li {
+    float: left;
+    width: 90px;
+    position: relative;
+    margin-left: -10px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+main .lnb .location > li > a {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+
+main .lnb .location .home {
+    width: 60px;
+}
+
+main .lnb .location .home a {
+    display: inline-block;
+}
+
+main .lnb .location .home a img {
+    width: 18px;
+    display: block;
+}
+
+main .main_title {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.total {
+	width: 80%;
+	margin: 80px auto;
+}
+.total h2 {
+	width: 40%;
+	font-size: 24px;
+	float: left;
+}
+.total h2 span {
+	color: #e16254;
+}
+.keyword input{
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.news {
+	width: 80%;
+	margin: 0 auto;
+}
+.news .newsBox {
+	border: 1px solid #333;
+	margin-bottom: 60px;
+	position: relative;
+}
+.news .newsBox>a>img {
+	width: 360px;
+	height: 300px;
+	display: inline-block;
+	border-right: 1px solid #333;
+	float: left;
+	margin-right: 30px;
+}
+.news .newsBox .newsTxt h3{
+	font-size: 20px;
+	margin-top: 40px;
+}
+.news .newsBox .newsTxt p {
+	font-size: 18px;
+	margin-top: 20px;
+	line-height: 1.8;
+}
+.news .newsBox .newsTxt span.date {
+	color: #ccc;
+	display: block;
+	margin-top: 80px;
+	/*outline: 2px solid red;*/
+}
+.news .newsBox .newsTxt .more {
+	position: absolute;
+	top: 78%;
+	right: 5%;
+	font-size: 18px;
+}
+.news .newsBox .newsTxt .more li {
+	float: left;
+}
+.news .newsBox .newsTxt .more li img {
+	display: inline-block;
+	margin-top: -5px;
+}
